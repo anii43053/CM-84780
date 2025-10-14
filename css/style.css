@@ -1040,30 +1040,29 @@ b1 {
     flex-direction: column;
   }
 }
+.formulario {
+  grid-column: auto;
+  width: min(92vw, 600px);
+  margin-bottom: 2rem;
+}
+
+.campo label {
+  margin: 0.5rem 0;
+}
+
+.campo input,
+.campo textarea {
+  height: 2.5rem;
+}
+
+@media (max-width: 992px) {
+  .container-visitanos {
+    grid-template-columns: 1fr;
+  }
+}
 @media (max-width: 576px) {
   .container-mapa {
-    width: 80%;
-  }
-}
-@media (max-width: 768px) {
-  .formulario {
-    grid-column: auto;
-    width: min(90vw, 100%);
-    margin-bottom: 2rem;
-  }
-  .campo label {
-    margin: 0.5rem 0;
-  }
-  .campo input,
-  .campo textarea {
-    height: 2.5rem;
-  }
-}
-@media (max-width: 1152px) {
-  .container-visitanos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    max-width: 100%;
   }
 }
 @media (max-width: 988px) {
@@ -1101,14 +1100,6 @@ b1 {
   width: 100%;
 }
 
-.container-visitanos {
-  width: auto;
-  padding: 50px 20px;
-  gap: 20px;
-  display: flex;
-  justify-content: center;
-}
-
 .transporte {
   display: flex;
   justify-content: center;
@@ -1133,14 +1124,26 @@ b1 {
   list-style-type: circle;
 }
 
-iframe {
-  width: 600px;
-  height: 500px;
-  align-content: center;
-}
-
 .buttom.navbar-toggler {
   color: #E8E4D8;
+}
+
+.container-visitanos {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  align-items: center;
+  text-align: start;
+}
+
+.container-mapa {
+  align-items: center;
+  text-align: center;
+}
+
+iframe {
+  height: 100%;
+  width: 60%;
+  margin-inline: auto;
 }
 
 /*$mainColor: rgb(108, 125, 81);
@@ -1620,30 +1623,29 @@ b1 {
     flex-direction: column;
   }
 }
+.formulario {
+  grid-column: auto;
+  width: min(92vw, 600px);
+  margin-bottom: 2rem;
+}
+
+.campo label {
+  margin: 0.5rem 0;
+}
+
+.campo input,
+.campo textarea {
+  height: 2.5rem;
+}
+
+@media (max-width: 992px) {
+  .container-visitanos {
+    grid-template-columns: 1fr;
+  }
+}
 @media (max-width: 576px) {
   .container-mapa {
-    width: 80%;
-  }
-}
-@media (max-width: 768px) {
-  .formulario {
-    grid-column: auto;
-    width: min(90vw, 100%);
-    margin-bottom: 2rem;
-  }
-  .campo label {
-    margin: 0.5rem 0;
-  }
-  .campo input,
-  .campo textarea {
-    height: 2.5rem;
-  }
-}
-@media (max-width: 1152px) {
-  .container-visitanos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    max-width: 100%;
   }
 }
 @media (max-width: 988px) {
