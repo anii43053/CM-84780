@@ -21,7 +21,7 @@
     h1 {
         @include fonts (30px, $secondFont, bold);
         color: $secondColor;
-        padding: 10px;
+        padding: 20px;
         margin: 5px;
         @include flexs;
     }
@@ -29,7 +29,7 @@
     h2 {
         @include fonts (32px, $secondFont, bold);
         color: $secondColor;
-        padding: 5px;
+        padding: 20px;
         margin: 10px;
         @include flexs;
     }
@@ -37,7 +37,7 @@
     h3 {
         @include fonts (30px, $mainFont, bolder);
         color: $secondColor;
-        padding: 5px;
+        padding: 20px;
         margin: 10px;
         @include flexs;
     }
@@ -45,7 +45,7 @@
     p {
         @include fonts (28px, $mainFont, none);
         color: $secondColor;
-        padding: 5px;
+        padding: 20px;
         margin: 1px;
         display: flex;
         justify-content: space-between;

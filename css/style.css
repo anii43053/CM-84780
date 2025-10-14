@@ -1,5 +1,8 @@
 @charset "UTF-8";
-
+/*$mainColor: rgb(108, 125, 81);
+$secondColor: rgb(66, 40, 28);
+$light-color: rgba(193, 185, 162, 0.778);
+$second-light-color: rgb(228, 224, 212);*/
 * {
   margin: 0;
   padding: 0;
@@ -18,6 +21,10 @@ body {
   background-color: rgb(228, 224, 212);
 }
 
+/*$mainColor: rgb(108, 125, 81);
+$secondColor: rgb(66, 40, 28);
+$light-color: rgba(193, 185, 162, 0.778);
+$second-light-color: rgb(228, 224, 212);*/
 * {
   margin: 0;
   padding: 0;
@@ -37,19 +44,20 @@ body {
 }
 
 .navbar {
-  background-color: rgb(108, 125, 81);
-  background: linear-gradient(45deg, rgb(59, 70, 43), rgb(108, 125, 81));
-  padding: 20px;
-  margin-bottom: 10px;
-  height: 30%;
-  position: sticky, 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(90deg, #4B5B39, #7C8C6A);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
 }
-
 .navbar .nav-list {
-  gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 14px 28px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
 }
 
 .nav-link,
@@ -58,9 +66,8 @@ body {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  padding: 0px 20px;
   text-decoration: none;
-  color: rgb(66, 40, 28);
+  color: #3D2F1B;
   font-size: 26px;
   font-family: "PatuaOne";
   font-weight: bold;
@@ -68,21 +75,27 @@ body {
 
 .nav-link:hover,
 .nav-link.active:hover {
-  color: rgb(228, 224, 212);
+  color: #F4F1E1;
 }
 
 .logo {
-  width: 20px;
-  height: 20px;
+  width: 100px;
+  height: 100px;
   border-radius: 100%;
+  object-fit: cover;
+  margin-right: auto;
 }
 
 .navbar-toggler {
   border: none;
   font-size: 1.5rem;
-  color: rgb(228, 224, 212);
+  color: #F4F1E1;
 }
 
+/*$mainColor: rgb(108, 125, 81);
+$secondColor: rgb(66, 40, 28);
+$light-color: rgba(193, 185, 162, 0.778);
+$second-light-color: rgb(228, 224, 212);*/
 * {
   margin: 0;
   padding: 0;
@@ -103,27 +116,29 @@ body {
 
 footer {
   height: 100px;
-  background: linear-gradient(45deg, rgb(108, 125, 81), rgb(59, 70, 43));
+  background: linear-gradient(45deg, #4B5B39, rgb(59, 70, 43));
   padding: 10px;
   margin-top: 10px;
-  color: rgb(66, 40, 28);
+  color: #3D2F1B;
   font-size: 20px;
   font-family: "PatuaOne";
   font-weight: bold;
 }
-
 footer .footer-list {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 footer .footer-text {
   display: flex;
   justify-content: center;
   align-items: end;
 }
 
+/*$mainColor: rgb(108, 125, 81);
+$secondColor: rgb(66, 40, 28);
+$light-color: rgba(193, 185, 162, 0.778);
+$second-light-color: rgb(228, 224, 212);*/
 * {
   margin: 0;
   padding: 0;
@@ -142,6 +157,10 @@ body {
   background-color: rgb(228, 224, 212);
 }
 
+/*$mainColor: rgb(108, 125, 81);
+$secondColor: rgb(66, 40, 28);
+$light-color: rgba(193, 185, 162, 0.778);
+$second-light-color: rgb(228, 224, 212);*/
 * {
   margin: 0;
   padding: 0;
@@ -161,19 +180,20 @@ body {
 }
 
 .navbar {
-  background-color: rgb(108, 125, 81);
-  background: linear-gradient(45deg, rgb(59, 70, 43), rgb(108, 125, 81));
-  padding: 20px;
-  margin-bottom: 10px;
-  height: 20%;
-  position: sticky, 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(90deg, #4B5B39, #7C8C6A);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
 }
-
 .navbar .nav-list {
-  gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 14px 28px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
 }
 
 .nav-link,
@@ -182,9 +202,8 @@ body {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  padding: 0px 20px;
   text-decoration: none;
-  color: rgb(66, 40, 28);
+  color: #3D2F1B;
   font-size: 26px;
   font-family: "PatuaOne";
   font-weight: bold;
@@ -192,20 +211,27 @@ body {
 
 .nav-link:hover,
 .nav-link.active:hover {
-  color: rgb(228, 224, 212);
+  color: #F4F1E1;
 }
 
 .logo {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  object-fit: cover;
+  margin-right: auto;
 }
 
 .navbar-toggler {
   border: none;
   font-size: 1.5rem;
-  color: rgb(228, 224, 212);
+  color: #F4F1E1;
 }
 
+/*$mainColor: rgb(108, 125, 81);
+$secondColor: rgb(66, 40, 28);
+$light-color: rgba(193, 185, 162, 0.778);
+$second-light-color: rgb(228, 224, 212);*/
 * {
   margin: 0;
   padding: 0;
@@ -226,27 +252,29 @@ body {
 
 footer {
   height: 100px;
-  background: linear-gradient(45deg, rgb(108, 125, 81), rgb(59, 70, 43));
+  background: linear-gradient(45deg, #4B5B39, rgb(59, 70, 43));
   padding: 10px;
   margin-top: 10px;
-  color: rgb(66, 40, 28);
+  color: #3D2F1B;
   font-size: 20px;
   font-family: "PatuaOne";
   font-weight: bold;
 }
-
 footer .footer-list {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 footer .footer-text {
   display: flex;
   justify-content: center;
   align-items: end;
 }
 
+/*$mainColor: rgb(108, 125, 81);
+$secondColor: rgb(66, 40, 28);
+$light-color: rgba(193, 185, 162, 0.778);
+$second-light-color: rgb(228, 224, 212);*/
 * {
   margin: 0;
   padding: 0;
@@ -266,30 +294,29 @@ body {
 }
 
 /*GALERIA*/
-
 .main-galeria {
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  padding: 0;
-  height: 80vh;
-  position: relative;
-  overflow: hidden;
-  flex-direction: column;
-  background-color: rgb(66, 40, 28);
+  background-color: #3D2F1B;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: unset;
   background-position: center;
   background-image: url(../assets/Images/foto-galeria.jpg);
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
 }
+
 .hero-card {
   display: flex;
   width: 100%;
   height: 600px;
 }
-
 .hero-card .hero-card-header {
   width: 50%;
   display: flex;
@@ -298,23 +325,23 @@ body {
   margin-top: 350px;
   margin-bottom: 350px;
 }
-
 .hero-card .hero-card-content {
-  color: rgb(66, 40, 28);
+  color: #3D2F1B;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 50%;
-  padding: 30px;
+  padding: 10px;
 }
-
 .hero-card .carousel-inner {
-  height: 400px;
-  display: flex;
-  align-items: center;
+  height: 500px;
 }
 
+/*$mainColor: rgb(108, 125, 81);
+$secondColor: rgb(66, 40, 28);
+$light-color: rgba(193, 185, 162, 0.778);
+$second-light-color: rgb(228, 224, 212);*/
 * {
   margin: 0;
   padding: 0;
@@ -344,7 +371,7 @@ body {
   position: relative;
   overflow: hidden;
   flex-direction: column;
-  background-color: rgb(66, 40, 28);
+  background-color: #3D2F1B;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: unset;
@@ -359,7 +386,6 @@ body {
   margin: 0 auto 3rem;
   font-family: "Poppins";
 }
-
 .formulario legend {
   color: var(--secundario);
   text-align: center;
@@ -367,7 +393,6 @@ body {
   font-family: "Poppins";
   font-weight: 600;
 }
-
 .formulario .campo label {
   display: block;
   margin: 1rem 0 0.5rem 0;
@@ -375,38 +400,38 @@ body {
   width: 100%;
   font-weight: 200;
 }
-
 .formulario .campo input {
   border-radius: 0.5rem;
   padding: 5px;
   border: 1rem var(--negro);
-  box-shadow: 2px 2px 2px 1px rgb(108, 125, 81);
+  box-shadow: 2px 2px 2px 1px #4B5B39;
   height: 3rem;
   width: 100%;
 }
-
 .formulario .campo textarea {
   border-radius: 0.5rem;
   padding: 5px;
   border: 1rem var(--negro);
-  box-shadow: 2px 2px 2px 1px rgb(108, 125, 81);
+  box-shadow: 2px 2px 2px 1px #4B5B39;
   height: 8rem;
   width: 100%;
 }
-
 .formulario .boton-formulario {
   display: inline-block;
   width: 100%;
   text-align: right;
   margin: 10px;
 }
-
 .formulario .boton-formulario input {
   padding: 5px;
   border-radius: 0.5rem;
-  box-shadow: 2px 2px 2px 1px rgb(108, 125, 81);
+  box-shadow: 2px 2px 2px 1px #4B5B39;
 }
 
+/*$mainColor: rgb(108, 125, 81);
+$secondColor: rgb(66, 40, 28);
+$light-color: rgba(193, 185, 162, 0.778);
+$second-light-color: rgb(228, 224, 212);*/
 * {
   margin: 0;
   padding: 0;
@@ -433,7 +458,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(66, 40, 28);
+  background-color: #3D2F1B;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: unset;
@@ -448,7 +473,7 @@ body {
   font-size: 16px;
   font-family: "Poppins";
   font-weight: none;
-  color: rgb(66, 40, 28);
+  color: #3D2F1B;
   padding: 5px;
   margin: 1px;
   width: 400px;
@@ -465,7 +490,7 @@ body {
 
 .grid-historia .box-historia {
   border-radius: 20px;
-  box-shadow: 0 2px rgb(66, 40, 28);
+  box-shadow: 0 2px #3D2F1B;
   overflow: hidden;
   margin: 20px;
   text-align: center;
@@ -478,15 +503,19 @@ body {
 }
 
 .box-historia {
-  background-color: rgba(193, 185, 162, 0.778);
+  background-image: linear-gradient(#E8E4D8, #F4F1E1);
   padding: 1%;
 }
 
 .grid-historia .box-historia:hover {
   transform: translateY(-15px);
-  box-shadow: 0 12px 16px rgb(66, 40, 28);
+  box-shadow: 0 12px 16px #3D2F1B;
 }
 
+/*$mainColor: rgb(108, 125, 81);
+$secondColor: rgb(66, 40, 28);
+$light-color: rgba(193, 185, 162, 0.778);
+$second-light-color: rgb(228, 224, 212);*/
 * {
   margin: 0;
   padding: 0;
@@ -513,10 +542,9 @@ body {
   justify-content: center;
   align-items: center;
   height: 80vh;
-  width: 100%;
   position: relative;
   overflow: hidden;
-  background-color: rgb(66, 40, 28);
+  background-color: #3D2F1B;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: unset;
@@ -535,18 +563,16 @@ body {
   border-radius: 15px;
   border: 1px solid white;
 }
-
 .box img {
   object-fit: cover;
   filter: blur(2px);
   position: absolute;
   border-radius: 8px;
   border: 1px solid white;
-  box-shadow: 2px 2px 6px 2px rgb(66, 40, 28);
+  box-shadow: 2px 2px 6px 2px #3D2F1B;
   width: 100%;
   height: 100%;
 }
-
 .box div {
   z-index: 3;
   border-radius: 14px;
@@ -598,42 +624,35 @@ b1 {
   .navbar-nav {
     margin-top: 10px;
   }
-
   .navbar-brand {
     margin-right: auto;
   }
 }
-
 @media only screen and (max-width: 767px) {
   .footer {
     display: flex;
     flex-direction: column;
   }
 }
-
 @media (max-width: 576px) {
   .container-mapa {
     width: 80%;
   }
 }
-
 @media (max-width: 768px) {
   .formulario {
     grid-column: auto;
     width: min(90vw, 100%);
     margin-bottom: 2rem;
   }
-
   .campo label {
     margin: 0.5rem 0;
   }
-
   .campo input,
   .campo textarea {
     height: 2.5rem;
   }
 }
-
 @media (max-width: 1152px) {
   .container-visitanos {
     display: flex;
@@ -641,30 +660,25 @@ b1 {
     align-items: center;
   }
 }
-
 @media (max-width: 988px) {
   .navbar {
     display: flex;
     flex-wrap: nowrap;
-    width: 100%;
   }
 }
-
 @media (max-width: 520px) {
   section.grid {
     display: flex;
     flex-direction: column;
   }
 }
-
-
 .main-inicio {
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(66, 40, 28);
+  background-color: #3D2F1B;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: unset;
@@ -695,24 +709,21 @@ b1 {
   align-items: center;
   flex-direction: column;
   width: 500;
-  height: 100%;
+  height: 500px;
   padding: 10px;
   margin: 10px;
-  margin-top: 40px;
 }
-
 .transporte h2 {
   font-size: 32px;
   font-family: "PatuaOne";
   font-weight: bold;
-  color: rgb(66, 40, 28);
+  color: #3D2F1B;
 }
-
 .transporte li {
   font-size: 28px;
   font-family: "Poppins";
   font-weight: none;
-  color: rgb(66, 40, 28);
+  color: #3D2F1B;
   list-style-type: circle;
 }
 
@@ -723,9 +734,13 @@ iframe {
 }
 
 .buttom.navbar-toggler {
-  color: rgba(193, 185, 162, 0.778);
+  color: #E8E4D8;
 }
 
+/*$mainColor: rgb(108, 125, 81);
+$secondColor: rgb(66, 40, 28);
+$light-color: rgba(193, 185, 162, 0.778);
+$second-light-color: rgb(228, 224, 212);*/
 * {
   margin: 0;
   padding: 0;
@@ -755,7 +770,7 @@ body {
   position: relative;
   overflow: hidden;
   flex-direction: column;
-  background-color: rgb(66, 40, 28);
+  background-color: #3D2F1B;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: unset;
@@ -770,7 +785,6 @@ body {
   margin: 0 auto 3rem;
   font-family: "Poppins";
 }
-
 .formulario legend {
   color: var(--secundario);
   text-align: center;
@@ -778,7 +792,6 @@ body {
   font-family: "Poppins";
   font-weight: 600;
 }
-
 .formulario .campo label {
   display: block;
   margin: 1rem 0 0.5rem 0;
@@ -786,38 +799,38 @@ body {
   width: 100%;
   font-weight: 200;
 }
-
 .formulario .campo input {
   border-radius: 0.5rem;
   padding: 5px;
   border: 1rem var(--negro);
-  box-shadow: 2px 2px 2px 1px rgb(108, 125, 81);
+  box-shadow: 2px 2px 2px 1px #4B5B39;
   height: 3rem;
   width: 100%;
 }
-
 .formulario .campo textarea {
   border-radius: 0.5rem;
   padding: 5px;
   border: 1rem var(--negro);
-  box-shadow: 2px 2px 2px 1px rgb(108, 125, 81);
+  box-shadow: 2px 2px 2px 1px #4B5B39;
   height: 8rem;
   width: 100%;
 }
-
 .formulario .boton-formulario {
   display: inline-block;
   width: 100%;
   text-align: right;
   margin: 10px;
 }
-
 .formulario .boton-formulario input {
   padding: 5px;
   border-radius: 0.5rem;
-  box-shadow: 2px 2px 2px 1px rgb(108, 125, 81);
+  box-shadow: 2px 2px 2px 1px #4B5B39;
 }
 
+/*$mainColor: rgb(108, 125, 81);
+$secondColor: rgb(66, 40, 28);
+$light-color: rgba(193, 185, 162, 0.778);
+$second-light-color: rgb(228, 224, 212);*/
 * {
   margin: 0;
   padding: 0;
@@ -837,12 +850,29 @@ body {
 }
 
 /*GALERIA*/
+.main-galeria {
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3D2F1B;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: unset;
+  background-position: center;
+  background-image: url(../assets/Images/foto-galeria.jpg);
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+}
+
 .hero-card {
   display: flex;
   width: 100%;
   height: 600px;
 }
-
 .hero-card .hero-card-header {
   width: 50%;
   display: flex;
@@ -851,9 +881,8 @@ body {
   margin-top: 350px;
   margin-bottom: 350px;
 }
-
 .hero-card .hero-card-content {
-  color: rgb(66, 40, 28);
+  color: #3D2F1B;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -861,11 +890,14 @@ body {
   width: 50%;
   padding: 10px;
 }
-
 .hero-card .carousel-inner {
   height: 500px;
 }
 
+/*$mainColor: rgb(108, 125, 81);
+$secondColor: rgb(66, 40, 28);
+$light-color: rgba(193, 185, 162, 0.778);
+$second-light-color: rgb(228, 224, 212);*/
 * {
   margin: 0;
   padding: 0;
@@ -892,7 +924,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(66, 40, 28);
+  background-color: #3D2F1B;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: unset;
@@ -907,7 +939,7 @@ body {
   font-size: 16px;
   font-family: "Poppins";
   font-weight: none;
-  color: rgb(66, 40, 28);
+  color: #3D2F1B;
   padding: 5px;
   margin: 1px;
   width: 400px;
@@ -924,7 +956,7 @@ body {
 
 .grid-historia .box-historia {
   border-radius: 20px;
-  box-shadow: 0 2px rgb(66, 40, 28);
+  box-shadow: 0 2px #3D2F1B;
   overflow: hidden;
   margin: 20px;
   text-align: center;
@@ -937,15 +969,19 @@ body {
 }
 
 .box-historia {
-  background-color: rgba(193, 185, 162, 0.778);
+  background-image: linear-gradient(#E8E4D8, #F4F1E1);
   padding: 1%;
 }
 
 .grid-historia .box-historia:hover {
   transform: translateY(-15px);
-  box-shadow: 0 12px 16px rgb(66, 40, 28);
+  box-shadow: 0 12px 16px #3D2F1B;
 }
 
+/*$mainColor: rgb(108, 125, 81);
+$secondColor: rgb(66, 40, 28);
+$light-color: rgba(193, 185, 162, 0.778);
+$second-light-color: rgb(228, 224, 212);*/
 * {
   margin: 0;
   padding: 0;
@@ -974,7 +1010,7 @@ body {
   height: 80vh;
   position: relative;
   overflow: hidden;
-  background-color: rgb(66, 40, 28);
+  background-color: #3D2F1B;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: unset;
@@ -993,18 +1029,16 @@ body {
   border-radius: 15px;
   border: 1px solid white;
 }
-
 .box img {
   object-fit: cover;
   filter: blur(2px);
   position: absolute;
   border-radius: 8px;
   border: 1px solid white;
-  box-shadow: 2px 2px 6px 2px rgb(66, 40, 28);
+  box-shadow: 2px 2px 6px 2px #3D2F1B;
   width: 100%;
   height: 100%;
 }
-
 .box div {
   z-index: 3;
   border-radius: 14px;
@@ -1056,92 +1090,93 @@ b1 {
   .navbar-nav {
     margin-top: 10px;
   }
-
   .navbar-brand {
     margin-right: auto;
   }
 }
-
 @media only screen and (max-width: 767px) {
   .footer {
     display: flex;
     flex-direction: column;
   }
 }
-
-@media (max-width: 1000px) {
-  .container-visitanos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
 @media (max-width: 576px) {
   .container-mapa {
     width: 80%;
   }
 }
-
 @media (max-width: 768px) {
   .formulario {
     grid-column: auto;
     width: min(90vw, 100%);
     margin-bottom: 2rem;
   }
-
   .campo label {
     margin: 0.5rem 0;
   }
-
   .campo input,
   .campo textarea {
     height: 2.5rem;
   }
 }
-
+@media (max-width: 1152px) {
+  .container-visitanos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 988px) {
+  .navbar {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+@media (max-width: 520px) {
+  section.grid {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .textos h1 {
   font-size: 30px;
   font-family: "PatuaOne";
   font-weight: bold;
-  color: rgb(66, 40, 28);
-  padding: 10px;
+  color: #3D2F1B;
+  padding: 20px;
   margin: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .textos h2 {
   font-size: 32px;
   font-family: "PatuaOne";
   font-weight: bold;
-  color: rgb(66, 40, 28);
-  padding: 5px;
+  color: #3D2F1B;
+  padding: 20px;
   margin: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .textos h3 {
   font-size: 30px;
   font-family: "Poppins";
   font-weight: bolder;
-  color: rgb(66, 40, 28);
-  padding: 5px;
+  color: #3D2F1B;
+  padding: 20px;
   margin: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .textos p {
   font-size: 28px;
   font-family: "Poppins";
   font-weight: none;
-  color: rgb(66, 40, 28);
-  padding: 5px;
+  color: #3D2F1B;
+  padding: 20px;
   margin: 1px;
   display: flex;
   justify-content: space-between;

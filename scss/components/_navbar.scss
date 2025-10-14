@@ -6,24 +6,28 @@
 // Nav
 
 .navbar {
-    background-color: $mainColor;
-    background: linear-gradient(45deg, rgb(59, 70, 43), $mainColor);
-    padding: 30px;
-    margin-bottom: 10px;
-    height: 30%;
-    position: sticky, 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(90deg, #4B5B39, #7C8C6A);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+  transition: all 0.3s ease;
 
     .nav-list {
-        gap: 10px;
-        @include flexs;
-    }
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 14px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
 }
 
 .nav-link,
 .nav-link.active.active {
     @include flexs;
     gap: 10px;
-    padding: 0px 20px;
     text-decoration: none;
     color: $secondColor;
     @include fonts (26px, $secondFont, bold);
@@ -35,8 +39,10 @@
 }
 
 .logo {
-    @include images(20px, 20px );
-    border-radius: 100%;
+  @include images(100px, 100px);
+  border-radius: 100%;
+  object-fit: cover;
+  margin-right: auto; 
 }
 
 .navbar-toggler {
