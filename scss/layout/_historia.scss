@@ -48,6 +48,9 @@
 .box-historia {
     background-image: linear-gradient($light-color, $second-light-color);
     padding: 1%;
+	-webkit-animation: rotate-center 0.8s ease-in-out both;
+	        animation: rotate-center 0.8s ease-in-out both;
+    
 }
 
 .grid-historia .box-historia:hover {
