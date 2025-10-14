@@ -19,41 +19,47 @@
 }
 
 .textos-historia {
-    @include fonts (16px, $mainFont, none);
+    font-family: $mainFont;
+    font-size: 17px;
+    line-height: 1.4;
     color: $secondColor;
-    padding: 5px;
-    margin: 1px;
-    width: 400px;
+    margin: 0;
+    padding: 0 8px;
 }
 
-.grid-historia {
+.img-historia {
     width: 100%;
-    max-width: 100%;
-    @include flexs;
-    flex-wrap: wrap;
-
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: linear-gradient(180deg, #f6f4ef, #e8e4d8);
 }
-
-.grid-historia .box-historia {
-    border-radius: 20px;
-    box-shadow: 0 2px $secondColor;
-    overflow: hidden;
-    margin: 20px;
-    text-align: center;
-    transition: all 0.45s;
-    @include flexs;
-    @include images(450px, 300px )
+.grid-historia {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+  justify-items: center;
+  align-items: stretch;
+  padding: 40px 5%;
+  background-color: $light-color;
 }
 
 .box-historia {
-    background-image: linear-gradient($light-color, $second-light-color);
-    padding: 1%;
-	-webkit-animation: rotate-center 0.8s ease-in-out both;
-	        animation: rotate-center 0.8s ease-in-out both;
-    
+  background: linear-gradient(180deg, $light-color, $second-light-color);
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 18px 16px;
 }
 
 .grid-historia .box-historia:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 12px 16px $secondColor;
+    transform: translateY(-8px);
+    box-shadow: 0 12px 16px $mainc;
 }
